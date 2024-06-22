@@ -1,0 +1,1058 @@
+.container {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  min-height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+
+/*HEADER------------------------------------------------------------*/
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.15;
+  font-size: 3rem;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: white;
+  background: #e60000;
+}
+
+
+/*NAV------------------------------------------------------------*/
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 80px;
+}
+
+.navItem {
+  margin: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid black;
+  padding: 10px;
+  color: #0070f3;
+  border-radius: 10px;
+}
+
+.navItem:hover {
+  background-color: lightgray;
+  border: 3px solid black;
+  padding: 9px;
+}
+
+
+/*FOOTER------------------------------------------------------------*/
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listItem {
+  margin: 0 1rem;
+}
+
+
+/*BUTTONS------------------------------------------------------------*/
+.addButton {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #0275d8;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.addButton:hover {
+  background-color: #0052a3;
+}
+
+.confirmButton {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #5cb85c;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.confirmButton:hover {
+  background-color: #3d8b3d;
+}
+
+.cancelButton {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #d9534f;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cancelButton:hover {
+  background-color: #9c332e;
+}
+
+.updateButton {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #0275d8;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.updateButton:hover{
+  background-color: #0052a3;
+}
+
+.deleteButton {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #d9534f;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.deleteButton:hover{
+  background-color: #9c332e;
+}
+
+
+/*HOME------------------------------------------------------------*/
+.h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 50px;
+  justify-self: center;
+}
+
+.p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.welkomContainer {
+  display: grid;
+  grid-template-columns: 55%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: stretch;
+}
+
+
+/*LOGIN/LOGOUT------------------------------------------------------*/
+.loginContainer {  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch;
+  grid-template-areas:
+    "firstRowLoginOut"
+    "secondRowLoginOut"
+    "thirdRowLoginOut"
+    "fourthRowLoginOut";
+}
+
+.firstRowLoginOut {
+  justify-self: center;
+  align-self: center;
+  grid-area: firstRowLoginOut;
+  text-align: center;
+}
+
+.secondRowLoginOut {
+  justify-self: center;
+  align-self: center;
+  grid-area: secondRowLoginOut;
+  text-align: center;
+}
+
+.thirdRowLoginOut {
+  justify-self: center;
+  align-self: center;
+  grid-area: thirdRowLoginOut;
+  text-align: center;
+}
+
+.fourthRowLoginLogout {
+  justify-self: center;
+  align-self: center;
+  grid-area: fourthRowLoginOut;
+  text-align: center;
+}
+
+
+/*CARS------------------------------------------------------------*/
+.containerCars {
+  display: grid;
+  grid-template-columns: 55% 35%;
+  grid-template-rows: auto;
+  gap: 0 1%;
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: stretch;
+  grid-template-areas:
+    "carOverview carForms";
+}
+
+.carForms {
+  grid-area: carForms;
+}
+
+.carOverview {
+  grid-area: carOverview;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 2em;
+}
+
+
+/* CARS OVERVIEW-------------*/
+.carContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  grid-auto-columns: 1fr;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "firstRow"
+    "secondRow"
+    "thirdRow"
+    "fourthRow";
+
+}
+
+.firstRowCarOverview {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "carType carBrandAndModel carButtons";
+  grid-area: firstRow;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 2em 1em 0 1em;
+  margin-top: 2em;
+}
+
+.carType {
+  grid-area: carType;
+  justify-self: center;
+  align-self: center;
+}
+
+.carBrandAndModel {
+  grid-area: carBrandAndModel;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.carButtons {
+  grid-area: carButtons;
+  justify-self: end;
+  align-self: center;
+}
+
+.secondRowCarOverview {
+  display: grid;
+  grid-template-columns: 50% 25%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: end;
+  grid-template-areas:
+    "carColor carAvailability";
+  justify-self: stretch;
+  grid-area: secondRow;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0 1em 2em 1em;
+}
+
+.carColor {
+  grid-area: carColor;
+  justify-self: center;
+  align-self: center;
+}
+
+.carAvailability {
+  grid-area: carAvailability;
+  margin-top: 1em;
+  margin-right: 10px;
+  justify-self: end;
+  align-self: center;
+}
+
+.thirdRowCarOverview {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "carChassisText carMileageText carBuildYearText carFuelTypeText";
+  grid-area: thirdRow;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 2em 1em 5px 1em;
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+.carChassisText {
+  grid-area: carChassisText;
+  justify-self: center;
+  align-self: center;
+}
+
+.carMileageText {
+  grid-area: carMileageText;
+  justify-self: center;
+  align-self: center;
+}
+
+.carBuildYearText {
+  grid-area: carBuildYearText;
+  justify-self: center;
+  align-self: center;
+}
+
+.carFuelTypeText {
+  grid-area: carFuelTypeText;
+  justify-self: center;
+  align-self: center;
+}
+
+.fourthRowCarOverview {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "carChassis carMileage carBuildYear carFuelType";
+  grid-area: fourthRow;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px 1em 2em 1em;
+  margin-bottom: 2em;
+  background-color: lightgray;
+}
+
+.carChassis {
+  grid-area: carChassis;
+  justify-self: center;
+  align-self: center;
+}
+
+.carMileage {
+  grid-area: carMileage;
+  justify-self: center;
+  align-self: center;
+}
+
+.carBuildYear {
+  grid-area: carBuildYear;
+  justify-self: center;
+  align-self: center;
+}
+
+.carFuelType {
+  grid-area: carFuelType;
+  justify-self: center;
+  align-self: center;
+}
+
+
+/* CARS FORMS----------------*/
+.carFormsContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "firstRow"
+    "secondRow"
+    "thirdRow"
+    "fourthRow"
+    "fifthRow";
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 2em 0.5em;
+  background-color: lightgray;
+}
+
+.carFormsContainer h2 {
+  font-size: 2em;
+}
+
+.carFormsContainer label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.firstRowCarForm {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "carChassisInput";
+  grid-area: firstRow;
+  padding: 0.5em 0;
+}
+
+.carChassisInput {
+  grid-area: carChassisInput;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondRowCarForm {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "carBrandInput carModelInput";
+  grid-area: secondRow;
+  padding: 0.5em 0;
+}
+
+.carBrandInput {
+  grid-area: carBrandInput;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.carModelInput {
+  grid-area: carModelInput;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.thirdRowCarForm {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "carType carFuelTypeInput";
+  grid-area: thirdRow;
+  padding: 0.5em 0;
+}
+
+.carType {
+  grid-area: carType;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.carFuelTypeInput {
+  grid-area: carFuelTypeInput;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.fourthRowCarForm {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "carColorInput carBuildYearInput";
+  grid-area: fourthRow;
+  padding: 0.5em 0;
+}
+
+.carColorInput {
+  grid-area: carColorInput;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.carBuildYearInput {
+  grid-area: carBuildYearInput;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.fifthRowCarForm {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "carMileageInput";
+  grid-area: fifthRow;
+  padding: 0.5em 0;
+}
+
+.carMileageInput {
+  grid-area: carMileageInput;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*BOOKINGS------------------------------------------------------------*/
+.containerBookings {
+  display: grid;
+  grid-template-columns: 55% 35%;
+  grid-template-rows: auto;
+  gap: 0 1%;
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: stretch;
+  grid-template-areas:
+    "carOverview carForms";
+}
+
+.bookingForms {
+  grid-area: carForms;
+}
+
+.bookingOverview {
+  grid-area: carOverview;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 2em;
+}
+
+
+/* BOOKINGS OVERVIEW-------------*/
+.bookingContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  grid-auto-columns: 1fr;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "firstRowBookingOverview"
+    "secondRowBookingOverview"
+    "thirdRowBookingOverview"
+    "fourthRowBookingOverview";
+}
+
+.firstRowBookingOverview {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "bookingId bookingStartDateAndEndDate bookingButtons";
+  grid-area: firstRowBookingOverview;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 2em 1em 0 1em;
+  margin-top: 2em;
+}
+
+.bookingId {
+  grid-area: bookingId;
+  justify-self: center;
+  align-self: center;
+}
+
+.bookingStartDateAndEndDate {
+  grid-area: bookingStartDateAndEndDate;
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bookingButtons {
+  grid-area: bookingButtons;
+  justify-self: center;
+  align-self: center;
+}
+
+.secondRowBookingOverview {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: end;
+  align-content: end;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "bookingStatus";
+  grid-area: secondRowBookingOverview;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0 1em 2em 1em;
+}
+
+.bookingStatus {
+  grid-area: bookingStatus;
+  margin-top: 1em;
+  margin-right: 10px;
+  justify-self: end;
+  align-self: center;
+}
+
+.thirdRowBookingOverview {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "bookingCarHeader";
+  grid-area: thirdRowBookingOverview;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 1em 1em 5px 1em;
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+.bookingCarHeader {
+  grid-area: bookingCarHeader;
+  justify-self: center;
+  align-self: center;
+}
+
+.fourthRowBookingOverviewOutline {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 2em;
+  background-color: lightgray;
+  padding-bottom: 2em;
+}
+
+.fourthRowBookingOverview {
+  display: grid;
+  grid-template-columns: 30.3% 30.3% 30.3%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "bookingCarChassis bookingCarBrandAndModel bookingCarFuelType";
+  grid-area: fourthRowBookingOverview;
+  padding: 10px 1em 10px 1em;
+}
+
+.bookingCarChassis {
+  grid-area: bookingCarChassis;
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+}
+
+.bookingCarBrandAndModel {
+  grid-area: bookingCarBrandAndModel;
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+}
+
+.bookingCarFuelType {
+  grid-area: bookingCarFuelType;
+  justify-self: center;
+  align-self: center;
+}
+
+
+/* BOOKINGS FROMS----------------*/
+.bookingFormscontainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "firstRowBookingForm"
+    "secondRowBookingForm"
+    "thirdRowBookingForm";
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 2em 0.5em;
+  background-color: lightgray;
+}
+
+.bookingFormscontainer h2 {
+  font-size: 2em;
+}
+
+.bookingFormscontainer label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.firstRowBookingForm {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "startDateInput endDateInput";
+  grid-area: firstRowBookingForm;
+  padding: 0.5em 0;
+}
+
+.startDateInput {
+  grid-area: startDateInput;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.endDateInput {
+  grid-area: endDateInput;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondRowBookingForm {
+  grid-area: secondRowBookingForm;
+}
+
+.thirdRowBookingForm {
+  grid-area: thirdRowBookingForm;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*PROFILES------------------------------------------------------------*/
+.containerProfiles {
+  display: grid;
+  grid-template-columns: 55%;
+  grid-template-rows: auto;
+  gap: 0 1%;
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: stretch;
+  grid-template-areas:
+    "profileOverview";
+}
+
+.profileOverview {
+  grid-area: profileOverview;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 2em;
+}
+
+
+/* PROFILES OVERVIEW-------------*/
+.profileContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  grid-auto-columns: 1fr;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "firstRow"
+    "secondRow";
+}
+
+.firstRowProfileOverview {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+        "firstNameText lastNameText emailText phoneNumberText";
+  grid-area: firstRow;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 2em 1em 5px 1em;
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+.secondRowProfileOverview {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+        "firstName lastName email phoneNumber";
+  grid-area: secondRow;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px 1em 2em 1em;
+  margin-bottom: 2em;
+  background-color: lightgray;
+}
+
+.profileFirstNameText {
+  grid-area: firstNameText;
+  justify-self: center;
+  align-self: center;
+}
+
+.profileLastNameText {
+  grid-area: lastNameText;
+  justify-self: center;
+  align-self: center;
+}
+
+.profileEmailText {
+  grid-area: emailText;
+  justify-self: center;
+  align-self: center;
+}
+
+.profilePhoneNumberText {
+  grid-area: phoneNumberText;
+  justify-self: center;
+  align-self: center;
+}
+
+.profileFirstName {
+  grid-area: firstName;
+  justify-self: center;
+  align-self: center;
+}
+
+.profileLastName {
+  grid-area: lastName;
+  justify-self: center;
+  align-self: center;
+}
+
+.profileEmail {
+  grid-area: email;
+  justify-self: center;
+  align-self: center;
+}
+
+.profilePhoneNumber {
+  grid-area: phoneNumber;
+  justify-self: center;
+  align-self: center;
+}
+
+
+/*USERS------------------------------------------------------------*/
+.containerUsers {
+  display: grid;
+  grid-template-columns: 55%;
+  grid-template-rows: auto;
+  gap: 0 1%;
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: stretch;
+  grid-template-areas:
+    "userOverview";
+}
+
+.userOverview {
+  grid-area: userOverview;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 2em;
+}
+
+
+/* USERS OVERVIEW-------------*/
+.userContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-auto-columns: 1fr;
+  gap: 0 0;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "firstRow"
+    "secondRow";
+}
+
+.firstRowUserOverview {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+        "usernameText firstNameText lastNameText emailText phoneNumberText";
+  grid-area: firstRow;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 2em 1em 5px 1em;
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+.secondRowUserOverview {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto;
+  gap: 0 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+        "username firstName lastName email phoneNumber";
+  grid-area: secondRow;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px 1em 2em 1em;
+  margin-bottom: 2em;
+  background-color: lightgray;
+}
+
+.userUsernameText {
+  grid-area: usernameText;
+  justify-self: center;
+  align-self: center;
+}
+
+.userUsername {
+  grid-area: username;
+  justify-self: center;
+  align-self: center;
+}
+
+
+/*------------------------------------------------------------*/
